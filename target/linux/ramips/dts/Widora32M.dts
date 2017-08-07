@@ -113,6 +113,12 @@
 
 		i2c@900 {
 			status = "okay";
+
+			rtc@51 {
+				compatible = "nxp,pcf8563";
+				reg = <0x51>;
+			};
+
 		};
 
 		uart1@d00 {
