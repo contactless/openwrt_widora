@@ -139,7 +139,7 @@
 	};
 
 	sdhci@10130000 {
-		status = "okay";
+		status = "disabled";
 		mediatek,cd-low;
 	};
         gpio-keys-polled {
