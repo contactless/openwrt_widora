@@ -153,4 +153,21 @@
                         linux,code = <0x211>;
                 };
         };
+
+	leds {
+		compatible = "gpio-leds";
+
+		red {
+			label = "red";
+			gpios = <&gpio0 14 0>;
+/*			linux,default-trigger = "timer";  */
+		};
+
+		green {
+			label = "green";
+			gpios = <&gpio0 15 0>;
+			linux,default-trigger = "timer";
+		};
+	};
+
 };
