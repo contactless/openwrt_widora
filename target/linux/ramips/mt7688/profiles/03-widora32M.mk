@@ -17,11 +17,14 @@ define Profile/Widora32M
 		kmod-fs-vfat kmod-fs-exfat kmod-fs-ext4 block-mount e2fsprogs \
 		kmod-i2c-core kmod-i2c-ralink \
 		kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 \
-		kmod-sdhci-mt7620 kmod-usb-storage \
+		kmod-usb-storage \
 		kmod-video-core kmod-video-uvc \
-		kmod-sound-core kmod-sound-mtk madplay-alsa alsa-utils \
+		kmod-sound-core madplay-alsa alsa-utils \
 		mtk-wifi airkiss webui ated \
-        	maccalc shairport_mmap reg ser2net
+        	maccalc shairport_mmap reg ser2net \
+        kmod-bluetooth kmod-rtc-ds1307 kmod-crypto-ecb \
+        kmod-crypto-manager kmod-input-evdev kmod-crypto-aead kmod-crypto-pcompress \
+        bluez-libs bluez-utils glib2 libattr libffi libical
 endef
 
 define Profile/Widora32M/Description
