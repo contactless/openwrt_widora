@@ -306,7 +306,7 @@
 		sdxc_pins: sdxc {
 			sdxc {
 				ralink,group = "sdmode";
-				ralink,function = "sdxc";
+				ralink,function = "gpio";
 			};
 		};
 

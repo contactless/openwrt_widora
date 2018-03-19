@@ -31,7 +31,7 @@
 			};
 			i2s {
 				ralink,group = "i2s";
-				ralink,function = "i2s";
+				ralink,function = "gpio";
 			};
 			spis {
 				ralink,group = "spis";
@@ -61,6 +61,19 @@
 				ralink,group = "wdt";
 				ralink,function = "gpio";
 			};
+			sdxc {
+				ralink,group = "sdmode";
+				ralink,function = "gpio";
+			};
+			pwm0 {
+				ralink,group = "pwm0";
+				ralink,function = "gpio";
+			};
+			pwm1 {
+				ralink,group = "pwm1";
+				ralink,function = "gpio";
+			};
+
 		};
 	};
 
@@ -130,7 +143,7 @@
 		};
 
 		pwm@5000 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
